@@ -1,0 +1,33 @@
+name: book_swap
+description: BookSwap app
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=2.18.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^4.2.1
+  firebase_auth: ^6.1.2
+  cloud_firestore: ^6.1.0
+  firebase_storage: ^13.0.4
+
+  # State management & utilities
+  provider: ^6.0.5
+  image_picker: ^1.2.0
+  uuid: ^4.5.2
+
+  # UI helpers
+  intl: ^0.20.2
+  firebase_app_check: ^0.4.1+2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
