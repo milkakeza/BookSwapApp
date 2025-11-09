@@ -1,9 +1,11 @@
+// ignore_for_file: deprecated_member_use, use_build_context_synchronously, curly_braces_in_flow_control_structures
+
 import 'dart:io';
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
-import '../providers/auth_provider.dart';
+// import '../providers/auth_provider.dart';
 import '../providers/book_provider.dart';
 import '../models/book.dart';
 

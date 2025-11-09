@@ -28,8 +28,9 @@ class FirestoreService {
     if (name != null) data['name'] = name;
     if (email != null) data['email'] = email;
     if (verified != null) data['verified'] = verified;
-    if (lastLogin != null)
+    if (lastLogin != null){
       data['lastLogin'] = lastLogin.toUtc().toIso8601String();
+    }
 
     final docRef = _db.collection('users').doc(uid);
     final existing = await docRef.get();

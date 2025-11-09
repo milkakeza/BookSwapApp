@@ -12,7 +12,8 @@ void main() async {
     );
 
     await FirebaseAppCheck.instance.activate(
-      androidProvider: AndroidProvider.debug, // change for production
+      providerAndroid: AndroidDebugProvider(),
+      providerApple: AppleDebugProvider(), // change for production
       // webRecaptchaSiteKey: 'REPLACE_WITH_WEB_KEY_IF_WEB_ONLY',
     );
   } catch (e) {

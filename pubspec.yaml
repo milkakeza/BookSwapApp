@@ -24,6 +24,7 @@ dependencies:
   # UI helpers
   intl: ^0.20.2
   firebase_app_check: ^0.4.1+2
+  flutter_lints: ^6.0.0
 
 dev_dependencies:
   flutter_test:

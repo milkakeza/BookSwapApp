@@ -1,3 +1,6 @@
+// ignore_for_file: deprecated_member_use, use_build_context_synchronously, curly_braces_in_flow_control_structures
+
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../services/firestore_service.dart';
@@ -64,7 +67,7 @@ class _BrowseScreenState extends State<BrowseScreen> {
 }
 
 class _BrowseList extends StatefulWidget {
-  const _BrowseList({super.key});
+  const _BrowseList();
 
   @override
   State<_BrowseList> createState() => __BrowseListState();
@@ -401,7 +404,7 @@ class _SwapOfferCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final firestore = FirestoreService();
-    final auth = Provider.of<AuthProvider>(context, listen: false);
+    // final auth = Provider.of<AuthProvider>(context, listen: false);
     
     return FutureBuilder<Book?>(
       future: firestore.getBook(offer['bookId'] ?? ''),
